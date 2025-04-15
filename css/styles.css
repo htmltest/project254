@@ -1,0 +1,270 @@
+@font-face {font-family:Hotpoint; font-weight:300; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Light.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Regular.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Medium.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Bold.ttf") format("truetype")}
+
+.land-newfroz-wrapper,
+.land-newfroz-wrapper *,
+.land-newfroz-wrapper *::before,
+.land-newfroz-wrapper *::after {outline:none; box-sizing:border-box; font-family:Hotpoint, sans-serif; letter-spacing:0}
+
+.land-newfroz-wrapper {background:#FFFFFF; position:relative; overflow:hidden; width:100%; padding-bottom:206px}
+.land-newfroz-wrapper.full {padding-bottom:56px}
+
+@media (max-width:1167px) {
+    .land-newfroz-wrapper {padding-bottom:103px}
+    .land-newfroz-wrapper.full {padding-bottom:70px}
+}
+
+.land-newfroz-container {margin:0 auto; max-width:1168px; width:100%; position:relative}
+
+@media (max-width:1167px) {
+    .land-newfroz-container {padding:0 10px}
+}
+
+.land-newfroz-welcome {position:relative; display:flex; align-items:center; justify-content:center; height:540px; background:#000000 url(../img/land-newfroz-welcome.jpg) no-repeat center top; background-size:auto 100%}
+.land-newfroz-welcome-title {font-weight:500; font-size:36px; line-height:1.3em; color:#FFFFFF}
+.land-newfroz-welcome-text {margin:20px 0 0 0; font-weight:normal; font-size:18px; line-height:1.5em; color:#FFFFFF; max-width:542px}
+.land-newfroz-welcome-btn {margin:40px 0 0 0; display:flex}
+.land-newfroz-welcome-btn a {display:flex; align-items:center; justify-content:center; border:1px solid #FFFFFF; padding:0 24px; color:#FFFFFF; font-weight:500; font-size:16px; line-height:1.5em; height:43px; border-radius:4px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s; text-transform:uppercase}
+@media (min-width:1168px) {
+    .land-newfroz-welcome-btn a:hover {color:#FFFFFF; border-color:#C99B69; background:#C99B69}
+}
+
+@media (max-width:1167px) {
+    .land-newfroz-welcome {height:640px; padding:20px 0; align-items:stretch; text-align:center; background:#000000 url(../img/land-newfroz-welcome-mobile.jpg) no-repeat center top; background-size:auto 100%}
+    .land-newfroz-welcome .land-newfroz-container {display:flex; flex-direction:column}
+    .land-newfroz-welcome-title {font-size:30px; line-height:1.2em}
+    .land-newfroz-welcome-text {margin:10px 0 0 0; font-size:16px; line-height:1.5em}
+    .land-newfroz-welcome-btn {margin:10px 0 0 0; flex-grow:1; align-items:flex-end}
+    .land-newfroz-welcome-btn a {width:100%; background:#FFFFFF; color:#000000}
+}
+
+.land-newfroz-menu {padding:40px 0 60px 0; background:#000000}
+.land-newfroz-menu-list {display:flex; align-items:center; justify-content:center}
+.land-newfroz-menu-item {font-weight:500; font-size:18px; line-height:1.5em}
+.land-newfroz-menu-item a {color:#C99B69; text-decoration:none; transition:color 0.2s}
+@media (min-width:1168px) {
+    .land-newfroz-menu-item a:hover {color:#FFFFFF}
+}
+.land-newfroz-menu-sep {margin:0 40px; width:1px; height:27px; background:rgba(255, 255, 255, 0.2)}
+
+@media (max-width:1167px) {
+    .land-newfroz-menu {display:none}
+}
+
+.land-newfroz-activeflow {position:relative; z-index:1; display:flex; height:792px; text-align:center; background:#000000 url(../img/land-newfroz-activeflow.jpg) no-repeat center top; background-size:auto 100%; border-radius:0 0 24px 24px}
+.land-newfroz-activeflow .land-newfroz-container {display:flex; flex-direction:column; align-items:center}
+.land-newfroz-activeflow-title {font-weight:500; font-size:36px; line-height:1.3em; color:#FFFFFF}
+.land-newfroz-activeflow-title sup {vertical-align:top; font-size:0.4em; line-height:1em; position:relative; top:10px; font-weight:bold}
+.land-newfroz-activeflow-text {margin:20px 0 0 0; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(255, 255, 255, 0.7); max-width:966px}
+.land-newfroz-activeflow-text sup {vertical-align:top; font-size:0.6em; line-height:1em; position:relative; top:4px}
+.land-newfroz-activeflow-notices {margin:20px 0 30px 0; display:flex; flex-grow:1; align-items:flex-end; justify-content:center; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(255, 255, 255, 0.5)}
+.land-newfroz-activeflow-notice {margin:0 0 0 40px}
+.land-newfroz-activeflow-notice:first-child {margin:0}
+.land-newfroz-activeflow-notice sup {vertical-align:top; font-size:0.6em; line-height:1em; position:relative; top:4px}
+
+@media (max-width:1167px) {
+    .land-newfroz-activeflow {height:660px; padding:60px 0 0 0; background-image:url(../img/land-newfroz-activeflow-mobile.jpg); border-radius:0}
+    .land-newfroz-activeflow .land-newfroz-container {align-items:stretch}
+    .land-newfroz-activeflow-title {font-size:24px; line-height:1.2em; margin:0 auto; max-width:300px}
+    .land-newfroz-activeflow-title br {display:none}
+    .land-newfroz-activeflow-text {margin:15px auto 0 auto; font-size:15px; line-height:1.7em; font-weight:normal; max-width:320px}
+    .land-newfroz-activeflow-notices {margin:15px 0 10px 0; font-size:11px; line-height:1.5em; justify-content:flex-end; flex-direction:column; align-items:flex-start}
+    .land-newfroz-activeflow-notice {margin:0}
+}
+
+.land-newfroz-ctrl {padding:120px 0 0 0; height:777px; position:relative}
+.land-newfroz-ctrl-bg {position:absolute; left:0; top:-24px; right:0; bottom:76px; background:no-repeat center bottom; background-size:cover; opacity:0; transition:opacity 0.3s}
+.land-newfroz-ctrl-bg-eco {background-image:url(../img/land-newfroz-ctrl-eco.jpg)}
+.land-newfroz-ctrl-eco .land-newfroz-ctrl-bg-eco {opacity:1}
+.land-newfroz-ctrl-bg-super {background-image:url(../img/land-newfroz-ctrl-super.jpg)}
+.land-newfroz-ctrl-super .land-newfroz-ctrl-bg-super {opacity:1}
+.land-newfroz-ctrl .land-newfroz-container {position:relative}
+.land-newfroz-ctrl-title {text-align:center; font-weight:500; font-size:36px; line-height:1.3em; color:#000000}
+.land-newfroz-ctrl-text {margin:20px 0 0 0; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(0, 0, 0, 0.7); text-align:center}
+.land-newfroz-ctrl-handle {width:300px; height:300px; position:relative; margin:76px auto 0 auto}
+.land-newfroz-ctrl-handle-mouse {position:absolute; left:47px; top:-34px; width:209px}
+.land-newfroz-ctrl-handle-mouse img {display:block; width:100%}
+.land-newfroz-ctrl-handle-touch {display:none}
+.land-newfroz-ctrl-handle-shadow {position:absolute; left:-60px; top:-20px; width:420px}
+.land-newfroz-ctrl-handle-shadow img {display:block; width:100%}
+.land-newfroz-ctrl-handle-center {position:relative}
+.land-newfroz-ctrl-handle-center img {display:block; width:100%; transition:transform 0.3s}
+.land-newfroz-ctrl-eco .land-newfroz-ctrl-handle-center img {transform:rotate(-45deg)}
+.land-newfroz-ctrl-super .land-newfroz-ctrl-handle-center img {transform:rotate(45deg)}
+.land-newfroz-ctrl-handle-text {position:absolute; width:430px; left:-45px; top:-16px}
+.land-newfroz-ctrl-handle-text svg {display:block; width:430px; height:62px; fill:#626262; transition:opacity 0.3s}
+.land-newfroz-ctrl-eco .land-newfroz-ctrl-handle-text-eco svg {fill:#33A300}
+.land-newfroz-ctrl-super .land-newfroz-ctrl-handle-text-super svg {fill:#38ABDF}
+.land-newfroz-ctrl-left {position:absolute; left:0; top:0; width:50%; bottom:0}
+.land-newfroz-ctrl-right {position:absolute; right:0; top:0; width:50%; bottom:0}
+
+@media (max-width:1167px) {
+    .land-newfroz-ctrl {padding:60px 0 0 0; height:575px}
+    .land-newfroz-ctrl-bg {top:0; bottom:0}
+    .land-newfroz-ctrl-bg-eco {background-image:url(../img/land-newfroz-ctrl-eco-mobile.jpg)}
+    .land-newfroz-ctrl-bg-super {background-image:url(../img/land-newfroz-ctrl-super-mobile.jpg)}
+    .land-newfroz-ctrl-title {font-size:24px; line-height:1.2em}
+    .land-newfroz-ctrl-title br {display:none}
+    .land-newfroz-ctrl-text {margin:15px 0 0 0; font-weight:normal; font-size:15px; line-height:1.7em; color:#000000}
+    .land-newfroz-ctrl-text br {display:none}
+    .land-newfroz-ctrl-handle {width:188px; height:188px; margin:61px auto 0 auto}
+    .land-newfroz-ctrl-handle-mouse {display:none}
+    .land-newfroz-ctrl-handle-touch {display:block; position:absolute; left:24px; top:-34px; width:139px}
+    .land-newfroz-ctrl-handle-touch img {display:block; width:100%}
+    .land-newfroz-ctrl-handle-shadow {left:-38px; top:-13px; width:264px}
+    .land-newfroz-ctrl-handle-text {width:275px; left:-31px; top:-21px}
+    .land-newfroz-ctrl-handle-text svg {width:275px; height:42px}
+}
+
+.land-newfroz-freshzone {text-align:center}
+.land-newfroz-freshzone-title {font-weight:500; font-size:36px; line-height:1.3em; color:#000000}
+.land-newfroz-freshzone-title sup {vertical-align:top; font-size:0.5em; line-height:1em; position:relative; top:10px; font-weight:bold}
+.land-newfroz-freshzone-text {margin:20px 0 0 0; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(0, 0, 0, 0.7)}
+.land-newfroz-freshzone-img {width:960px; margin:40px auto 0 auto}
+.land-newfroz-freshzone-img img {display:block; width:100%}
+.land-newfroz-freshzone-img img+img {display:none}
+.land-newfroz-freshzone-notice {margin:-60px 0 0 0; text-align:center; position:relative; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(0, 0, 0, 0.5)}
+
+@media (max-width:1167px) {
+    .land-newfroz-freshzone-title {font-size:24px; line-height:1.2em}
+    .land-newfroz-freshzone-text {margin:15px 0 0 0; font-weight:normal; font-size:15px; line-height:1.7em; color:#000000}
+    .land-newfroz-freshzone-text br {display:none}
+    .land-newfroz-freshzone-img {width:300px; margin:20px auto 0 auto; display:flex; justify-content:center}
+    .land-newfroz-freshzone-img img {display:none; max-width:none; min-width:460px; max-width:460px}
+    .land-newfroz-freshzone-img img+img {display:block}
+    .land-newfroz-freshzone-notice {margin:-87px 0 0 0; font-size:15px; line-height:1.5em}
+}
+
+.land-newfroz-design {margin:120px 0 0 0}
+.land-newfroz-design-title {font-weight:500; font-size:36px; line-height:1.3em; color:#000000; text-align:center}
+.land-newfroz-design-text {margin:20px 0 0 0; font-weight:500; font-size:18px; line-height:1.5em; color:rgba(0, 0, 0, 0.7); text-align:center}
+.land-newfroz-design-container {margin:40px 0 0 0; display:flex; justify-content:center}
+.land-newfroz-design-content {min-width:1360px; max-width:1360px; position:relative}
+.land-newfroz-design-img img {display:block; width:100%; border-radius:12px}
+.land-newfroz-design-img-mobile {display:none}
+.land-newfroz-design-point {position:absolute; cursor:pointer}
+.land-newfroz-design-point-1 {left:663px; top:111px}
+.land-newfroz-design-point-2 {left:599px; top:190px}
+.land-newfroz-design-point-3 {left:663px; top:315px}
+.land-newfroz-design-point-4 {left:755px; top:190px}
+.land-newfroz-design-point-icon {position:absolute; width:40px; height:40px; background:rgba(255, 255, 255, 0.2); border-radius:50%; transition:background 0.2s}
+@media (min-width:1168px) {
+    .land-newfroz-design-point:hover .land-newfroz-design-point-icon {background:#FFFFFF}
+}
+.land-newfroz-design-point-icon::before {content:""; position:absolute; left:12px; top:12px; width:16px; height:16px; background:#FFFFFF; border-radius:50%; transition:background 0.2s}
+@media (min-width:1168px) {
+    .land-newfroz-design-point:hover .land-newfroz-design-point-icon::before {background:#C99B69}
+}
+@keyframes land-newfroz-design-point-animate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+.land-newfroz-design-point-icon::after {content:""; position:absolute; left:0; top:0; width:40px; height:40px; border:1px solid rgba(255, 255, 255, 0.3); border-radius:50%; animation:land-newfroz-design-point-animate 2s infinite linear}
+.land-newfroz-design-point-popup {position:absolute; display:none}
+@media (min-width:1168px) {
+    .land-newfroz-design-point:hover .land-newfroz-design-point-popup {display:block}
+}
+.land-newfroz-design-point-1 .land-newfroz-design-point-popup {right:0; bottom:20px}
+.land-newfroz-design-point-2 .land-newfroz-design-point-popup {right:0; top:40px}
+.land-newfroz-design-point-3 .land-newfroz-design-point-popup {right:0; top:40px}
+.land-newfroz-design-point-4 .land-newfroz-design-point-popup {left:40px; bottom:0}
+.land-newfroz-design-point-popup-text {white-space:nowrap; font-weight:500; font-size:18px; line-height:1.5em; color:#000000; padding:15px 20px; background:rgba(255, 255, 255, 0.9); backdrop-filter:blur(10px)}
+.land-newfroz-design-point-1 .land-newfroz-design-point-popup-text {border-radius:10px 10px 0 10px}
+.land-newfroz-design-point-2 .land-newfroz-design-point-popup-text {border-radius:10px 0 10px 10px}
+.land-newfroz-design-point-3 .land-newfroz-design-point-popup-text {border-radius:10px 0 10px 10px}
+.land-newfroz-design-point-4 .land-newfroz-design-point-popup-text {border-radius:10px 10px 10px 0; text-align:right}
+.land-newfroz-design-point-popup-notice {display:none}
+.land-newfroz-design-notice {position:absolute; right:10px; bottom:10px; font-weight:500; font-size:13px; line-height:1.5em; color:rgba(255, 255, 255, 0.5)}
+.land-newfroz-design-popup-mobile {display:none}
+
+@media (max-width:1167px) {
+    .land-newfroz-design {margin:60px 0 0 0}
+    .land-newfroz-design-title {font-size:24px; line-height:1.2em}
+    .land-newfroz-design-text {margin:15px 0 0 0; font-weight:normal; font-size:15px; line-height:1.7em; color:#000000}
+    .land-newfroz-design-text br {display:none}
+    .land-newfroz-design-container {margin:30px 0 0 0}
+    .land-newfroz-design-content {min-width:320px; max-width:320px}
+    .land-newfroz-design-img {display:none}
+    .land-newfroz-design-img-mobile {display:flex; justify-content:center}
+    .land-newfroz-design-img-mobile img {display:block; width:auto; min-width:978px; max-width:978px}
+    .land-newfroz-design-point-icon {width:60px; height:60px}
+    .land-newfroz-design-point-icon::before {left:18px; top:18px; width:24px; height:24px}
+    .land-newfroz-design-point-icon::after {width:60px; height:60px}
+    .land-newfroz-design-point-1 {left:130px; top:88px}
+    .land-newfroz-design-point-2 {left:74px; top:151px}
+    .land-newfroz-design-point-3 {left:130px; top:242px}
+    .land-newfroz-design-point-4 {left:222px; top:150px}
+    .land-newfroz-design-point.active .land-newfroz-design-point-icon {background:#FFFFFF}
+    .land-newfroz-design-point.active .land-newfroz-design-point-icon::before {background:#C99B69}
+    .land-newfroz-design-notice {display:none}
+    .land-newfroz-design-popup-mobile {display:block; position:absolute; left:10px; bottom:10px; right:10px}
+    .land-newfroz-design-point-popup-text {white-space:normal; border-radius:0 10px 10px 10px}
+    .land-newfroz-design-point-popup-text br {display:none}
+    .land-newfroz-design-point-popup-notice {display:block; margin:7px 0 0 0; font-weight:500; font-size:13px; line-height:1.5em; color:rgba(255, 255, 255, 0.75)}
+}
+
+.land-newfroz-catalogue {margin:120px 0 0 0}
+.land-newfroz-catalogue-logo {display:flex; justify-content:center}
+.land-newfroz-catalogue-logo img {width:142px}
+.land-newfroz-catalogue-title {margin:20px 0 0 0; text-align:center; font-weight:500; font-size:36px; line-height:1.3em; color:#000000}
+.land-newfroz-catalogue-list {position:relative; margin:30px -10px 0 -10px}
+.land-newfroz-catalogue-list .swiper-slide {min-width:33.33%; max-width:33.33%; padding:10px 0}
+a.land-newfroz-catalogue-item {display:block; padding:20px 24px; background:#FFFFFF; border-radius:8px; border:1px solid #DBDBDB; transition:box-shadow 0.2s; margin:0 10px; text-decoration:none}
+@media (min-width:1168px) {
+    a.land-newfroz-catalogue-item:hover {box-shadow:0px 0px 15px rgba(0, 0, 0, 0.1)}
+}
+.land-newfroz-catalogue-item-preview {width:184px; margin:0 auto}
+.land-newfroz-catalogue-item-preview img {display:block; width:100%}
+.land-newfroz-catalogue-item-preview-mobile {display:none}
+.land-newfroz-catalogue-item-title {margin:10px 0 0 0; text-align:center; font-weight:500; font-size:18px; line-height:1.5em; color:#000000}
+.land-newfroz-catalogue-item-btn {margin:20px 0 0 0}
+.land-newfroz-catalogue-item-btn span {display:flex; align-items:center; justify-content:center; border:1px solid #C99B69; padding:0 24px; color:#C99B69; font-weight:500; font-size:16px; line-height:1.5em; height:51px; border-radius:4px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s; text-transform:uppercase}
+@media (min-width:1168px) {
+    a.land-newfroz-catalogue-item:hover .land-newfroz-catalogue-item-btn span {color:#FFFFFF; border-color:#C99B69; background:#C99B69}
+}
+.land-newfroz-catalogue-list .swiper-button-prev,
+.land-newfroz-catalogue-list .swiper-button-next {position:absolute; display:block; z-index:2; top:50%; width:30px; height:30px; border:none; border-radius:0; margin:-15px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none; transform:none; opacity:1}
+.land-newfroz-catalogue-list .swiper-button-prev::after,
+.land-newfroz-catalogue-list .swiper-button-next::after {display:none}
+.land-newfroz-catalogue-list .swiper-button-prev {left:-41px}
+.land-newfroz-catalogue-list .swiper-button-next {right:-41px}
+.land-newfroz-catalogue-list .swiper-button-prev svg,
+.land-newfroz-catalogue-list .swiper-button-next svg {display:block; width:30px; height:30px; fill:#C99B69; transition:fill 0.2s}
+@media (min-width:1168px) {
+    .land-newfroz-catalogue-list .swiper-button-prev:hover svg,
+    .land-newfroz-catalogue-list .swiper-button-next:hover svg {fill:#191919}
+}
+.land-newfroz-catalogue-list .swiper-button-prev.swiper-button-disabled,
+.land-newfroz-catalogue-list .swiper-button-next.swiper-button-disabled {opacity:0}
+.land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal {display:flex; position:absolute; margin:0; width:auto; left:0; top:auto; right:0; bottom:-56px; align-items:center; justify-content:center}
+.land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:10px; max-width:10px; height:10px; background:#191919; opacity:1; margin:0 0 0 36px; border-radius:50%; cursor:pointer; position:relative; transition:min-width 0.2s, max-width 0.2s, height 0.2s, background 0.2s}
+.land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet:first-child {margin:0}
+.land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:16px; max-width:16px; height:16px; background:#C99B69; opacity:1}
+
+@media (max-width:1167px) {
+    .land-newfroz-catalogue {margin:60px 0 0 0}
+    .land-newfroz-catalogue-title {font-size:24px; line-height:1.5em}
+    .land-newfroz-catalogue-list {margin:-40px -10px}
+    .land-newfroz-catalogue-list .swiper-slide {padding:60px 0; min-width:100%; max-width:100%}
+    a.land-newfroz-catalogue-item {margin:0 10px; padding:20px 10px 10px 10px; border-radius:12px; border:none}
+    .land-newfroz-catalogue-list .swiper-slide-active a.land-newfroz-catalogue-item {box-shadow:0px 0px 60px rgba(0, 0, 0, 0.2)}
+    .land-newfroz-catalogue-item-preview {display:none}
+    .land-newfroz-catalogue-item-preview-mobile {display:block; margin:0 auto; max-width:147px}
+    .land-newfroz-catalogue-item-preview-mobile img {display:block; width:100%}
+    .land-newfroz-catalogue-item-title {margin:20px 0 0 0; text-align:center; font-size:15px; line-height:1.5em}
+    .land-newfroz-catalogue-item-title br {display:none}
+    .land-newfroz-catalogue-item-btn span {height:43px}
+    .land-newfroz-catalogue-list-ctrl {position:relative; margin:-40px 10px 0 10px; display:flex; justify-content:space-between; align-items:center}
+    .land-newfroz-catalogue-list .swiper-button-prev,
+    .land-newfroz-catalogue-list .swiper-button-next {position:relative; left:auto; top:auto; right:auto; margin:0}
+    .land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal {position:relative; margin:0 10px; left:auto; right:auto; bottom:auto}
+    .land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {min-width:5px; max-width:5px; height:5px; background:#D9D9D9; margin:0 0 0 30px}
+    .land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet:first-child {margin:0}
+    .land-newfroz-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:10px; max-width:10px; height:10px; background:#C99B69}
+}
